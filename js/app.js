@@ -22,7 +22,7 @@ function mapData(user) {
   let usersData = "";
   user.users.forEach((el) => {
     usersData += `
-          <div class="users__card">
+          <div class="users__card"  data-aos="zoom-in">
             <div class="users__card__img">
               <img src="${el.image}" alt="" />
             </div>
