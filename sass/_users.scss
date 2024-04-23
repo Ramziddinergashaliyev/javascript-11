@@ -1,0 +1,19 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+
+  &__card {
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 10px;
+  }
+
+  &__card__info {
+    padding: 20px;
+  }
+
+  &__card__info__bottom {
+    padding: 20px;
+    display: none;
+  }
+}
