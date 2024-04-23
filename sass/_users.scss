@@ -1,7 +1,13 @@
 .users {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 40px;
+
+  &__title {
+    font-size: 50px;
+    text-align: center;
+    padding: 0px 0px 20px;
+  }
 
   &__card {
     box-shadow: 1px 1px 10px gray;
@@ -12,8 +18,7 @@
     padding: 20px;
   }
 
-  &__card__info__bottom {
-    padding: 20px;
-    display: none;
+  &__card__desc {
+    font-size: 16px;
   }
 }

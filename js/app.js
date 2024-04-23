@@ -32,20 +32,17 @@ function mapData(user) {
               <p class="users__card__desc">maidenName: ${el.maidenName}</p>
               <p class="users__card__desc">age: ${el.age}</p>
               <p class="users__card__desc">gender: ${el.gender}</p>
-              <p class="users__card__desc">${el.email}</p>
-              <p class="users__card__desc">${el.phone}</p>
-              <button class="click__btn">Click mee</button>
-            </div>
-            <div class="users__card__info__bottom">
+              <p class="users__card__desc">email: ${el.email}</p>
+              <p class="users__card__desc">phone: ${el.phone}</p>
               <p class="users__card__desc">username: ${el.username}</p>
               <p class="users__card__desc">password: ${el.password}</p>
               <p class="users__card__desc">birthDate: ${el.birthDate}</p>
-              <p class="users__card__desc">height:${el.height}</p>
-              <p class="users__card__desc">weight: ${el.weight}</p>
+              <p class="users__card__desc">height:${el.height}   weight: ${el.weight}</p>
+              <p class="users__card__desc"></p>
               <p class="users__card__desc">eyeColor: ${el.eyeColor}</p>
               <p class="users__card__desc">address: ${el.address.city}</p>
               <p class="users__card__desc">university: ${el.university}</p>
-            </div>
+          </div>
           </div>
     `;
   });
@@ -72,10 +69,3 @@ function loadCard(count) {
 }
 
 loadCard(30);
-
-let click__btn = document.querySelector(".click__btn");
-let usersBottom = document.querySelector(".users__card__info__bottom");
-
-click__btn.addEventListener("click", () => {
-  usersBottom.style.display = "block";
-});

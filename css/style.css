@@ -23,7 +23,12 @@ button {
 .users {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 40px;
+}
+.users__title {
+  font-size: 50px;
+  text-align: center;
+  padding: 0px 0px 20px;
 }
 .users__card {
   box-shadow: 1px 1px 10px gray;
@@ -32,9 +37,8 @@ button {
 .users__card__info {
   padding: 20px;
 }
-.users__card__info__bottom {
-  padding: 20px;
-  display: none;
+.users__card__desc {
+  font-size: 16px;
 }
 
 .loading {
@@ -54,7 +58,7 @@ button {
   flex-direction: column;
   gap: 5px;
   padding: 20px;
-  height: 100px;
+  height: 200px;
 }
 .loading__card__img {
   width: 100%;
